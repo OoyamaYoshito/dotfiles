@@ -1,0 +1,11 @@
+[user]
+  email = b1016006@gmail.com
+	name = OoyamaYoshito
+[core]
+  editor = vim -c \"set fenc=utf-8\"
+  pager = less -cm
+  quotepath = false
+[push]
+  default = simple
+[commit]
+  template = ~/dotfiles/src/commit_template

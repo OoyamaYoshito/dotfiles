@@ -1,0 +1,63 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "python.linting.pylintPath": "/Users/ooyamayoshito/.pyenv/shims/pylint",
+    
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.tools": [
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-interaction=nonstopmode",
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ],
+            "name": "Step 1: ptex2pdf"
+        },
+        {
+            "command": "pbibtex",
+            "args": [   
+                "%DOCFILE%",
+                "-kanji=utf8"
+            ],
+            "name": "Step 2: pbibtex"
+        },
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-interaction=nonstopmode",
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ],
+            "name": "Step 3: ptex2pdf"
+        },
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-interaction=nonstopmode",
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ],
+            "name": "Step 4: ptex2pdf"
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "toolchain",
+            "tools": [
+                "Step 1: ptex2pdf",
+            ]
+        }
+    ],
+"editor.renderControlCharacters": true,
+"editor.wordWrap": "on",
+"workbench.iconTheme": "material-icon-theme",
+"window.zoomLevel": 1,
+"editor.fontFamily": "Cica, Menlo, Monaco, 'Courier New', monospace",
+"python.pythonPath": "/Users/ooyamayoshito/.pyenv/versions/anaconda3-2019.07/bin/python"
+}
